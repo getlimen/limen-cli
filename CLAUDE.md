@@ -3,7 +3,13 @@
 > **Project**: limen-cli — component of [Limen](https://github.com/getlimen/limen)
 > **Role**: Optional admin CLI for Limen. **Not in v1 — scheduled for v1.1+.**
 
-**For full project context, read [`limen/docs/HANDOFF.md`](https://github.com/getlimen/limen/blob/main/docs/HANDOFF.md).**
+**For full project context, read [`limen/docs/HANDOFF.md`](https://github.com/getlimen/limen/blob/main/docs/HANDOFF.md) and [`limen/docs/CONVENTIONS.md`](https://github.com/getlimen/limen/blob/main/docs/CONVENTIONS.md).**
+
+## Workflow rules (enforced, apply to every repo in `getlimen`)
+
+- **Never work on `main`.** Create issue (labeled) → branch `<type>/<issue>_<PascalCaseName>` → PR (labeled) with `Closes #<issue>` → squash-merge + delete branch.
+- **Use CLI generators whenever one exists.** `dotnet new`, `gh issue create`, `gh pr create`, etc. If you don't know the command, search online before hand-writing boilerplate.
+- **No AI / Claude attribution** in commits or PRs.
 
 ## Status
 
